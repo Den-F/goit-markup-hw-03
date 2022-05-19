@@ -1,8 +1,5 @@
 # goit-markup-hw-02
 
-
-
-
 <!-- Семантичное скрытие элементов
 .visually-hidden {
   position: absolute;
@@ -16,3 +13,5 @@
   clip-path: inset(50%);
   margin: -1px;
 } -->
+
+&nbsp -для переноса текста в блоке

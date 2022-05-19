@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <!-- Шапка сайта -->
     <header>
@@ -38,7 +39,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="contakts list">
+      <ul class="contakts-list list">
         <li>
           <a class="contakt-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -52,137 +53,168 @@
 
     <main>
       <section class="portfolio">
-        <h1 class="portfolio-title">Навигация по сайту</h1>
+        <h1 class="portfolio-title visually-hidden">Навигация по сайту</h1>
 
-        <ul class="btn-list list">
-          <li>
-            <button class="btn-filter current" type="button">Все</button>
-          </li>
-          <li>
-            <button class="btn-filter" type="button">Веб сайты</button>
-          </li>
-          <li>
-            <button class="btn-filter" type="button">Приложения</button>
-          </li>
-          <li>
-            <button class="btn-filter" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="btn-filter" type="button">Маркетинг</button>
-          </li>
-        </ul>
+        <div class="portfolio-btn c-box">
+          <ul class="btn-list list">
+            <li>
+              <button class="btn-filter all current" type="button">Все</button>
+            </li>
+            <li>
+              <button class="btn-filter web-site" type="button">
+                Веб сайты
+              </button>
+            </li>
+            <li>
+              <button class="btn-filter app" type="button">Приложения</button>
+            </li>
+            <li>
+              <button class="btn-filter design" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="btn-filter marketing" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="c-box portfolio-img">
+          <ul class="portfolio-list list">
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img011.jpeg"
+                    alt="Ноутбук с фото на экране"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle">Технокряк</h2>
+                  <p class="portfolio-text link">Веб сайт</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img022.jpeg"
+                    alt="Баскетболисты в прыжке"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle">
+                    Постер<span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
 
-        <ul class="portfolio-list list">
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img011.jpeg"
-                alt="Ноутбук с фото на экране"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle">Технокряк</h2>
-              <p class="portfolio-text link">Веб сайт</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img022.jpeg"
-                alt="Баскетболисты в прыжке"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle">
-                Постер<span lang="en">New Orlean vs Golden Star</span>
-              </h2>
-              <p class="portfolio-text">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img033.jpeg"
-                alt="Логотип ресторана"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle">
-                Ресторан<span lang="en">Seeafood</span>
-              </h2>
-              <p class="portfolio-text">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img src="./images/img044.jpeg" alt="Наушники" width="370" />
-              <h2 class="portfolio-subtitle">
-                Проект<span lang="en">Prime</span>
-              </h2>
-              <p class="portfolio-text">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img055.jpeg"
-                alt="Упаковочные коробочки"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle">
-                Проект<span lang="en">Boxes</span>
-              </h2>
-              <p class="portfolio-text">Приложение</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img066.jpeg"
-                alt="Монитор компьютера с отрытой страницей"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle" lang="en">
-                Inspiration has no Borders
-              </h2>
-              <p class="portfolio-text">Веб сайт</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img077.jpeg"
-                alt="Разворот журнала"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle">
-                Издание<span lang="en">Limited Edition</span>
-              </h2>
-              <p class="portfolio-text">Дизайн</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img088.jpeg"
-                alt="Этикетка с лейблом"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle">
-                Проект<span lang="en">LAB</span>
-              </h2>
-              <p class="portfolio-text">Маркетинг</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/img099.jpeg"
-                alt="Открытый ноутбук"
-                width="370"
-              />
-              <h2 class="portfolio-subtitle" lang="en">Growing Business</h2>
-              <p class="portfolio-text">Приложение</p>
-            </a>
-          </li>
-        </ul>
+                  <p class="portfolio-text">Дизайн</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img033.jpeg"
+                    alt="Логотип ресторана"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle">
+                    Ресторан<span lang="en">Seeafood</span>
+                  </h2>
+
+                  <p class="portfolio-text">Приложение</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img src="./images/img044.jpeg" alt="Наушники" width="370" />
+                  <h2 class="portfolio-subtitle">
+                    Проект<span lang="en">Prime</span>
+                  </h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img055.jpeg"
+                    alt="Упаковочные коробочки"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle">
+                    Проект<span lang="en">Boxes</span>
+                  </h2>
+
+                  <p class="portfolio-text">Приложение</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img066.jpeg"
+                    alt="Монитор компьютера с отрытой страницей"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+
+                  <p class="portfolio-text">Веб сайт</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img077.jpeg"
+                    alt="Разворот журнала"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle">
+                    Издание<span lang="en">Limited Edition</span>
+                  </h2>
+
+                  <p class="portfolio-text">Дизайн</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img088.jpeg"
+                    alt="Этикетка с лейблом"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle">
+                    Проект<span lang="en">LAB</span>
+                  </h2>
+
+                  <p class="portfolio-text">Маркетинг</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="c-box portfolio-img-box">
+                <a class="link" href="">
+                  <img
+                    src="./images/img099.jpeg"
+                    alt="Открытый ноутбук"
+                    width="370"
+                  />
+                  <h2 class="portfolio-subtitle" lang="en">Growing Business</h2>
+                  <p class="portfolio-text">Приложение</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Футер -->
