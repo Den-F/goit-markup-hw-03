@@ -26,6 +26,7 @@ p {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -66,6 +67,7 @@ p {
 .contakts-list:focus {
   color: var(--accent-color);
 }
+
 .container {
   outline: 2px solid blueviolet;
   margin-left: auto;
@@ -76,19 +78,22 @@ p {
 }
 
 .page-header {
-  outline: 1px solid red;
-  margin-bottom: 25px;
 }
 
 /* Стили для index.html */
 
 /* Hero */
-.hero {
-  background-color: var(--second-background-color);
-  outline: 2px solid red;
+
+.container.hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  /* padding-left: 452px;
+  padding-right: 452px; */
   text-align: center;
-  width: 1600px;
-  margin-bottom: 94px;
+}
+.hero-section {
+  background-color: var(--second-background-color);
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -98,8 +103,6 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-text-color);
-  margin-top: 0;
-  margin-bottom: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -107,7 +110,7 @@ p {
 }
 /* Button */
 .button-hero {
-  /* display: inline-block; */
+  display: inline-block;
   font-family: inherit;
   cursor: pointer;
   background-color: var(--accent-color);
@@ -133,11 +136,12 @@ p {
 
 /* SECTION */
 /* Секция особенности */
-/* .title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-} */
+
+.container.feature {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
 /* Семантическое скрытие элементов */
 .visually-hidden {
   position: absolute;
@@ -157,7 +161,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .feature-description {
@@ -172,15 +176,27 @@ p {
   width: 270px;
 }
 /* Чем мы занимаемся  */
+
+.container.doing {
+  padding-bottom: 94px;
+  padding-top: 47px;
+}
 .doing-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* Команда */
+
+.container.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-name {
   background-color: #f5f4fa;
 }
@@ -190,12 +206,15 @@ p {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .team-position {
   color: var(--title-text-color);
@@ -208,8 +227,18 @@ footer {
   color: var(--primari-background-color);
   background-color: var(--second-background-color);
 }
+.container.footer {
+  height: 252px;
+  padding-left: 215px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer .logo {
+  display: block;
   color: var(--second-text-color);
+  margin-bottom: 20px;
 }
 .footer .contakt-link {
   color: rgba(255, 255, 255, 0.6);
@@ -220,6 +249,7 @@ footer {
 .adress-link {
   color: var(--second-text-color);
   font-style: normal;
+  margin-bottom: 9px;
 }
 .contakt-link:hover {
   color: var(--accent-color);
@@ -248,6 +278,8 @@ footer {
   padding: 6px 22px;
   background: #f5f4fa;
   color: var(--primari-text-color);
+  min-width: 73px;
+  max-width: 145px;
 }
 .btn-filter:hover,
 .btn-filter:focus {
@@ -255,19 +287,14 @@ footer {
   color: var(--primari-background-color);
 }
 .btn-filter.all {
-  width: 73px;
 }
 .btn-filter.web-site {
-  width: 128px;
 }
 .btn-filter.app {
-  width: 145px;
 }
 .btn-filter.design {
-  width: 103px;
 }
 .btn-filter.marketing {
-  width: 130px;
 }
 
 .portfolio-subtitle {
