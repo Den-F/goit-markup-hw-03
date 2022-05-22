@@ -65,7 +65,7 @@ p {
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -356,17 +356,21 @@ footer {
   color: var(--primari-background-color);
 }
 .portfolio-list {
-  --items: 9;
+  --items: 3;
   /* overflow: hidden; */
 }
 .portfolio-item {
   /* border: 1px solid transparent; */
   /* box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
+img {
+  display: block;
+}
 .portfolio-item:hover,
 .portfolio-item:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .portfolio-img-box {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
