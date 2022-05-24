@@ -39,7 +39,7 @@ section {
   padding-bottom: 94px;
 }
 .container {
-  outline: 2px solid blueviolet;
+  /* outline: 2px solid blueviolet; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -75,8 +75,8 @@ img {
   display: flex;
   align-items: center;
 }
-.site-nav-item,
-.contakts-item {
+.nav-link,
+.contakt-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -94,13 +94,13 @@ img {
 .accent {
   color: #2196f3;
 }
+
 .site-nav {
   display: flex;
-  margin-right: 331px;
 }
-/* .contakt-list {
+.contakts-list {
   margin-left: auto;
-} */
+}
 
 .site-nav :hover,
 .site-nav :focus {
@@ -241,10 +241,9 @@ img {
 .doing-list {
   --items: 3;
 }
-/* .container.doing {
-  padding-bottom: 94px;
+.section-doing {
   padding-top: 47px;
-} */
+}
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -286,7 +285,7 @@ img {
   letter-spacing: 0.03em;
 }
 .team-box {
-  padding: 20px 30px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -307,6 +306,7 @@ footer {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
+  padding: 0;
 }
 .adress-link {
   color: var(--second-text-color);
