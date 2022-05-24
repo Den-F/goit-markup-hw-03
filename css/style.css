@@ -147,8 +147,7 @@ img {
   padding-bottom: 200px;
   padding-top: 200px;
 }
-.container.hero {
-}
+
 .hero-section {
   background-color: var(--second-background-color);
   text-align: center;
@@ -200,8 +199,6 @@ img {
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.container.feature {
-}
 
 /* Семантическое скрытие элементов */
 .visually-hidden {
@@ -244,10 +241,10 @@ img {
 .doing-list {
   --items: 3;
 }
-.container.doing {
+/* .container.doing {
   padding-bottom: 94px;
   padding-top: 47px;
-}
+} */
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -261,10 +258,6 @@ img {
 
 .team-list {
   --items: 4;
-}
-.container.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-name {
@@ -284,7 +277,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 .team-position {
   color: var(--title-text-color);
@@ -294,19 +286,21 @@ img {
   letter-spacing: 0.03em;
 }
 .team-box {
-  padding: 30px 60px;
+  padding: 20px 30px;
+  text-align: center;
 }
 
 footer {
   color: var(--primari-background-color);
   background-color: var(--second-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
   display: block;
   color: var(--second-text-color);
   margin-bottom: 20px;
-  padding-top: 60px;
 }
 .footer .contakt-link {
   color: rgba(255, 255, 255, 0.6);
@@ -328,16 +322,13 @@ footer {
 .contakt-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.contakt-item.tel {
-  padding-bottom: 60px;
-}
 
 /* Стили для portfolio.html */
 
-.container.portfolio-btn {
+/* .container.portfolio-btn {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 .btn-list {
   display: flex;
   flex-wrap: nowrap;
@@ -387,8 +378,8 @@ footer {
   width: 100%;
 }
 .link-portfolio-blok {
-  width: 370px;
-  display: block;
+  /* width: 370px;
+  display: block; */
 }
 .link-portfolio-blok:hover,
 .link-portfolio-blok:focus {
