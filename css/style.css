@@ -34,13 +34,20 @@ p {
 .link {
   text-decoration: none;
 }
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
-  /* outline: 2px solid blueviolet; */
+  outline: 2px solid blueviolet;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+}
+img {
+  display: block;
 }
 /* НАЧАЛО. Добавляем в секции в которых 
 нужен сброс падиннгов */
@@ -59,15 +66,21 @@ p {
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
   margin: calc(var(--indent) / 2);
 }
-/* Style for header */
+/* Style 
+            for header */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .page-box {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
-
+.site-nav-item,
+.contakts-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -76,16 +89,18 @@ p {
   text-decoration: none;
   color: var(--primari-text-color);
   align-items: center;
-  margin-right: auto;
+  margin-right: 93px;
 }
 .accent {
   color: #2196f3;
 }
 .site-nav {
   display: flex;
-
   margin-right: 331px;
 }
+/* .contakt-list {
+  margin-left: auto;
+} */
 
 .site-nav :hover,
 .site-nav :focus {
@@ -126,16 +141,20 @@ p {
 
 /* Стили для index.html */
 
-/* Hero */
-
-.container.hero {
+/* 
+          HERO */
+.hero-section {
   padding-bottom: 200px;
   padding-top: 200px;
+}
+.container.hero {
 }
 .hero-section {
   background-color: var(--second-background-color);
   text-align: center;
+  align-items: center;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -147,7 +166,7 @@ p {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  max-width: 696px;
 }
 /* Button */
 .button-hero {
@@ -177,10 +196,11 @@ p {
 
 /* SECTION */
 /* Секция особенности */
-
-.container.feature {
+.section-feature {
   padding-top: 94px;
   padding-bottom: 47px;
+}
+.container.feature {
 }
 
 /* Семантическое скрытие элементов */
